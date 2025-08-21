@@ -15,7 +15,7 @@ public class LogsController {
 	
 	private static final Logger logger = LoggerFactory.getLogger(LogsController.class);
 	
-	@RequestMapping(value = { "/**", "/" }, method = RequestMethod.GET)
+	@RequestMapping(value = { "/test" }, method = RequestMethod.GET)
 	public Long createLogs() {
 		logger.info("----------------------------------INFO");
 		logger.debug("----------------------------------DEBUG");

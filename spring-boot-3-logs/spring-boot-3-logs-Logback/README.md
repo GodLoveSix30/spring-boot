@@ -105,3 +105,9 @@
 	</springProfile>
 </configuration>
 ```
+设置的级别			会输出的日志							不会输出的日志
+ERROR	  				ERROR						WARN, INFO, DEBUG, TRACE
+WARN					WARN,ERROR					INFO, DEBUG, TRACE
+INFO (最常用)		INFO, WARN, ERROR				DEBUG, TRACE
+DEBUG				DEBUG, INFO, WARN, ERROR		TRACE
+TRACE	TRACE, DEBUG, INFO, WARN, ERROR	(所有都会输出)

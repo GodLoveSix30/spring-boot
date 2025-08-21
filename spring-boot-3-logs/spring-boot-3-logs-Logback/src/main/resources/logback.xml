@@ -15,8 +15,10 @@
 				<pattern>%date [%thread] %-5level %logger{80} || %msg%n</pattern>
 			</encoder>
 		</appender>
+		<!-- 特定包下的日志输数据 -->
 		<logger name="cn.timebusker.util" level="debug" />
-		<root level="info">
+		<!-- 通用报下的日志输出 -->
+		<root level="error">
 			<appender-ref ref="CONSOLE" />
 		</root>
 	</springProfile>

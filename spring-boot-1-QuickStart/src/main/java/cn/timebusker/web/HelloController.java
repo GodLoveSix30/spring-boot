@@ -27,7 +27,7 @@ public class HelloController {
 	@RequestMapping("/hello")
 	public String hello() {
 		System.out.println("Hello Spring-Boot");
-		return "Hello spring-boot-1-QuickStart！！！";
+		return "Hello spring-boot-2-QuickStart！！！";
 	}
 	
 }
