@@ -16,13 +16,15 @@ import com.alibaba.fastjson.JSON;
 import cn.timebusker.entity.User;
 import cn.timebusker.service.UserService;
 
+import javax.annotation.Resource;
+
 @RestController
 @RequestMapping("/u")
 public class UserController {
 
 	private static final Logger logger = LoggerFactory.getLogger(UserController.class);
 
-	@Autowired
+	@Resource
 	UserService service;
 
 	/**

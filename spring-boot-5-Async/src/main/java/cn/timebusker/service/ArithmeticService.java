@@ -48,7 +48,7 @@ public class ArithmeticService {
 		long end = System.currentTimeMillis();
 		sum = end - start;
 		logger.info("\t 完成任务二   ");
-		logger.info("注解任务执行的时间是： " + sum + "（毫秒）");
+		logger.info("异步注解任务执行的时间是： " + sum + "（毫秒）");
 	}
 
 	/**
@@ -62,7 +62,7 @@ public class ArithmeticService {
 		Thread.sleep(DoTime);
 		long end = System.currentTimeMillis();
 		sum = end - start;
-		logger.info("\t 完成任务三   ");
+		logger.info("\t 同步完成任务三   ");
 		return sum;
 	}
 

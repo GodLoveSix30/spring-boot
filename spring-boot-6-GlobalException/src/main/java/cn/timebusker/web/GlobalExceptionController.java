@@ -57,7 +57,7 @@ public class GlobalExceptionController {
         ModelAndView mav = new ModelAndView();
         ErrorMassage<Exception> error = new ErrorMassage<Exception>();
         error.setCode(400);
-        error.setMessage("系统异常");
+        error.setMessage("系统通用异常");
         error.setUrl(req.getRequestURI());
         error.setData(e);
         mav.addObject(error);

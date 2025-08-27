@@ -3,6 +3,7 @@ package cn.timebusker.service;
 import java.util.List;
 
 import cn.timebusker.entity.User;
+import org.springframework.cache.annotation.Cacheable;
 
 public interface UserService {
 
@@ -13,6 +14,9 @@ public interface UserService {
 	 * @return
 	 */
 	public User findUserById(Long id);
+
+	@Cacheable(value = {"#id"})
+	User findUserById(long id);
 
 	/**
 	 * 查询所有用户
