@@ -48,7 +48,7 @@
                 <artifactId>spring-boot-maven-plugin</artifactId>
                 <configuration>
                     <fork>true</fork>
-                    <mainClass>com.timebusker.App</mainClass>
+                    <mainClass>cn.timebusker.App</mainClass>
                 </configuration>
             </plugin>
             <plugin>
